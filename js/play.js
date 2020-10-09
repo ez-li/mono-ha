@@ -33,6 +33,7 @@ const changeBg = (bg) => {
 const bgConcrete = 'assets/bg-concrete.jpeg';
 const bgGrass = 'assets/bg-grass.jpg';
 const bgSand = 'assets/bg-sand.jpg';
+const bgSky = 'assets/bg-sky.jpg';
 
 const elbow = 'assets/elbow.png';
 const metalRing1 = 'assets/metal-ring1.png';
@@ -54,16 +55,15 @@ const cloud2 = 'assets/cloud2.png';
 const leafDead = 'assets/leaf-dead.png';
 const leafRed = 'assets/leaf-red.png';
 const leafThin = 'assets/leaf-thin.png';
-const orange = 'assets/orange.png';
 
 const natureThings = [rock1, rock2, rock3, rock4,
     cloud1, cloud2, leafDead,
-    leafRed, leafThin, orange];
+    leafRed, leafThin];
 
 const machineThings = [elbow, metalRing1, metalRing2,
     threadedRing, knot, metalBall, metalPlate];
 
-const backgrounds = [bgConcrete, bgGrass, bgSand];
+const backgrounds = [bgConcrete, bgGrass, bgSand, bgSky];
 
 const randomThings = () => {
     const pickNatureThing = () => natureThings[Math.floor(Math.random() * natureThings.length)];
